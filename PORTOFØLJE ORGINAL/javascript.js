@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectImage = document.querySelector('.project-image');
     const randomImage = document.querySelector('.random-image');
 
-    // Map project names to image file names
+s
     const projectImageMap = {
         'Prosjekt A': 'projectA.jpg',
         'Prosjekt B': 'projectB.jpg',
@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         'Prosjekt D': 'projectD.jpg'
     };
 
-    // Function to create image URLs based on file names
+  
     const getImageUrl = (fileName) => `bilder/${fileName}`;
 
-    // Add event listeners to each prosjektkortcontainer
+
     prosjektContainers.forEach((container) => {
         const projectName = container.querySelector('.venstre-prosjektkort h4').textContent.trim();
         container.addEventListener('mouseenter', () => {
@@ -44,8 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var randomImageUrl = getRandomImageUrl();
     randomImage.src = randomImageUrl;
-    projectImage.style.display = 'none'; // Initially hide project image
-});
+    projectImage.style.display = 'none'; 
 
 
 
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const kalenderItems = document.querySelectorAll('.kalender');
 
-// Define an object to map month abbreviations to CSS variable names
+
 const monthColors = {
     JAN: '--jan-color',
     FEB: '--feb-color',
@@ -73,7 +72,7 @@ const monthColors = {
 };
 
 kalenderItems.forEach(item => {
-    const monthAbbreviation = item.dataset.month; // Get the month abbreviation from data attribute
+    const monthAbbreviation = item.dataset.month;
     const borderColor = monthColors[monthAbbreviation];
     
     item.addEventListener('mouseenter', () => {

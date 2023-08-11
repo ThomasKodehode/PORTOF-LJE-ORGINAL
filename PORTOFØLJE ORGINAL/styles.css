@@ -319,8 +319,8 @@ h2 {
 }
 
 .prosjektkortcontainer {
-    background-color: initial; /* or any other initial color */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    background-color: initial; 
+    transition: background-color 0.3s ease; 
     height: 88px;
     width: 536px;
     display: flex;
@@ -331,7 +331,7 @@ h2 {
 }
 
 .prosjektkortcontainer:hover {
-    background-color: var(--light-blue); /* Change to the color you want */
+    background-color: var(--light-blue); 
 }
 
 .venstre-prosjektkort {
@@ -447,11 +447,11 @@ padding-left: 441px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevent image overflow */
+    overflow: hidden; 
 }
 
 .splashbok .img {
-    max-width: 100%; /* Fit the image within the container */
-    max-height: 100%; /* Fit the image within the container */
+    max-width: 100%; 
+    max-height: 100%;
 }
 
