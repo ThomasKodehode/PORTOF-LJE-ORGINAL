@@ -1,9 +1,10 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const prosjektContainers = document.querySelectorAll('.prosjektkortcontainer');
     const projectImage = document.querySelector('.project-image');
     const randomImage = document.querySelector('.random-image');
 
-s
+
     const projectImageMap = {
         'Prosjekt A': 'projectA.jpg',
         'Prosjekt B': 'projectB.jpg',
@@ -11,17 +12,17 @@ s
         'Prosjekt D': 'projectD.jpg'
     };
 
-  
+    
     const getImageUrl = (fileName) => `bilder/${fileName}`;
 
-
+    
     prosjektContainers.forEach((container) => {
         const projectName = container.querySelector('.venstre-prosjektkort h4').textContent.trim();
         container.addEventListener('mouseenter', () => {
             const imageName = projectImageMap[projectName];
             if (imageName) {
-                randomImage.style.display = 'none'; // Hide random image
-                projectImage.style.display = 'block'; // Show project image
+                randomImage.style.display = 'none'; 
+                projectImage.style.display = 'block'; 
                 projectImage.src = getImageUrl(imageName);
             }
         });
@@ -44,9 +45,8 @@ s
 
     var randomImageUrl = getRandomImageUrl();
     randomImage.src = randomImageUrl;
-    projectImage.style.display = 'none'; 
-
-
+    projectImage.style.display = 'none';
+});
 
 
 
@@ -54,7 +54,6 @@ s
 
 
 const kalenderItems = document.querySelectorAll('.kalender');
-
 
 const monthColors = {
     JAN: '--jan-color',
@@ -72,7 +71,7 @@ const monthColors = {
 };
 
 kalenderItems.forEach(item => {
-    const monthAbbreviation = item.dataset.month;
+    const monthAbbreviation = item.dataset.month; 
     const borderColor = monthColors[monthAbbreviation];
     
     item.addEventListener('mouseenter', () => {
